@@ -131,6 +131,8 @@ dmypy.json
 /test_train_splits/
 /Stanford40/
 /downloaded data/
+/.idea
+/Weights
 
 Stanford40_JPEGImages.zip
 Stanford40_ImageSplits.zip
