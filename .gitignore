@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/video_data/
+/test_train_splits/
+/Stanford40/
+/downloaded data/
+
+Stanford40_JPEGImages.zip
+Stanford40_ImageSplits.zip
