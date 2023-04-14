@@ -24,7 +24,15 @@ y[0] = cyclical_learning_rate(1, 0.001)
 for nr in x[1:]:
     y[nr] = cyclical_learning_rate(nr, y[nr-1])
 
-plt.plot(y)
-plt.ylabel("learning rate")
-plt.xlabel("epochs")
-plt.show()
+
+plt.savefig("Stanford", format='png')
+
+def graph(history):
+    plt.plot(history.history['loss'], label='loss')
+    plt.plot(history.history['val_loss'], label = 'val_loss')
+    plt.title('Variant one')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.ylim([0.2, 0.8])
+    plt.legend(loc='lower left')
+    plt.savefig("Stanford")
